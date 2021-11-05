@@ -42,6 +42,10 @@ export default {
         return {total,tabNumber,handleClick,openStatus}
     },
     mounted(){
+        // 默认展示第一页
+        setTimeout(() => {
+            this.$router.push('/heliPage?page=1')
+        }, 500);
     }
 }
 </script>
@@ -49,6 +53,7 @@ export default {
 <style scoped>
 #heli{
     width: 100%;
+    overflow: hidden;
 }
 .storyWrap{
     width: 1200px;

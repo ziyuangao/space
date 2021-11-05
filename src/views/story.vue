@@ -6,7 +6,7 @@ export default defineComponent({
   setup() {
     const router = useRouter()
     const bookList = [
-        {id:1,name:'何力传',path:'/heli',disabled:false},
+        {id:1,name:'何立传',path:'/heli',disabled:false},
         {id:2,name:'高远传',path:'/gaoyuan',disabled:true},
         {id:3,name:'待定',path:'/',disabled:true},
     ]

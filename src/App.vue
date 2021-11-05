@@ -9,7 +9,7 @@ import MenuList from "./components/common/menuList.vue";
 
 <style>
 #app {
-  font-family: "webfont", Helvetica, Arial, sans-serif;
+  /* font-family: "webfont", Helvetica, Arial, sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
