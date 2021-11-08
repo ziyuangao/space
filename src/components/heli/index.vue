@@ -31,7 +31,7 @@ import { useRouter } from 'vue-router'
 export default {
     setup() {
         // 总数
-        const total = ref(2);
+        const total = ref(4);
         // 页码
         const tabNumber = Math.ceil(total.value/35);
         const router = useRouter()
