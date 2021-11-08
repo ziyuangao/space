@@ -7,7 +7,7 @@
 </template>
 
 
-<script lang="ts">
+<script>
 /**
  * 何立传  合计80W字
  * 10万与美女
@@ -72,12 +72,14 @@ export default {
             ]
         }
     },
-    mounted(){
-        this.obj = this.heliArr.map((item: { id: Number })=>{
-            if(item.id == this.$route.query.page){
-                return item
-            }
-        })[0]
+    watch:{
+        '$route.query.page':function(newVal){
+            this.heliArr.forEach((item)=>{
+                if(item.id == newVal ){
+                    this.obj = item
+                }
+            })
+        }
     }
 }
 </script>
